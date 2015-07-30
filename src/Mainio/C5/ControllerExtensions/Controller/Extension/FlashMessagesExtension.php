@@ -18,19 +18,20 @@ trait FlashMessagesExtension
     protected function setFlash($key, $value)
     {
         $flashbag = Session::getFlashBag();
-        return $flashbag->set($key, $value);
+        $flashbag->set($key, $value);
     }
 
     /**
      * Gets the flash variable from the session flashbag.
      * 
-     * @param $key string
-     * @return mixed
+     * @param $type string
+     * @param $default Default value if $type does not exist.
+     * @return array
      */
-    protected function getFlash($key)
+    protected function getFlash($type, $default = array())
     {
         $flashbag = Session::getFlashBag();
-        return $flashbag->get($key);
+        return $flashbag->get($type, $default);
     }
 
     /**
