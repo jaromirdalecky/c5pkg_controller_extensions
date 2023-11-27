@@ -1,5 +1,5 @@
 {
-    "name": "mainio/c5-controller-extensions",
+    "name": "jaromirdalecky/c5-controller-extensions",
     "type": "library",
     "description": "Provides some useful extensions for concrete5 controllers.",
     "keywords": ["concrete5", "controller", "extension", "extensions"],
